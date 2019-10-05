@@ -28,7 +28,7 @@ namespace appContacto.Sevices
             }
 
 
-            bool isReachable = VerifyConnectionURL("https://productosi220.azurewebsites.net/");
+            bool isReachable = VerifyConnectionURL("http://localhost:50048/");
             if (!isReachable)
             {
                 return new Response
