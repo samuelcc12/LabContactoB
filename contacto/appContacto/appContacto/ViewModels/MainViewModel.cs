@@ -1,7 +1,21 @@
-﻿namespace appContacto.ViewModels
+﻿using appContacto.Models;
+using System.Collections.Generic;
+
+namespace appContacto.ViewModels
 {
     public class MainViewModel
     {
+        #region Properties
+        public List<Contact> ContactList { get; set; }
+        #endregion
+
+
+        #region ViewModel
+        public ContactViewModel contactViewModel { get; set; }
+        #endregion
+
+
+
         #region Constructor
         public MainViewModel()
         {
@@ -11,7 +25,7 @@
         #region singleton
         private static MainViewModel instance;
 
-        private static MainViewModel GetInstance()
+        public static MainViewModel GetInstance()
         {
             if (instance==null)
             {
