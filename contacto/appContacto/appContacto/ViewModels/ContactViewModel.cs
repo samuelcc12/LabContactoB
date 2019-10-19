@@ -41,7 +41,7 @@
 
             }
             var response = await this.apiService.GetList<Contact>(
-                "http://localhost:50048/",
+                "http://localhost:49867/",
                 "api/",
                 "Contacts");
             if(!response.IsSuccess)

@@ -5,7 +5,7 @@
              BindingContext="{Binding Main, Source={StaticResource Locator}}">
   <ListView x:Name="MyListView"
             ItemsSource="{Binding Contact}"
-            ItemTapped="Handle_ItemTapped"
+             
             CachingStrategy="RecycleElement">
             
     <!--Built in Cells-->

@@ -28,7 +28,7 @@ namespace appContacto.Sevices
             }
 
 
-            bool isReachable = VerifyConnectionURL("http://localhost:50048/");
+            bool isReachable = VerifyConnectionURL("http://localhost:49867/");
             if (!isReachable)
             {
                 return new Response
